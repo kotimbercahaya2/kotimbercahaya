@@ -1,0 +1,7 @@
+[build]
+    command = "ELEVENTY_ENV=prod yarn build"
+    publish = "dist"
+
+[dev]
+    command = "yarn start"
+    autoLaunch = false

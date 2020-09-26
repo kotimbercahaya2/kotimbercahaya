@@ -1,0 +1,29 @@
+{
+  "name": "kotim-bercahaya",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx gulp serve",
+    "build": "npx gulp build",
+    "debug": "DEBUG=* yarn build",
+    "clean": "npx del-cli dist",
+    "prestart": "yarn clean"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@ampproject/eleventy-plugin-amp": "^0.5.3",
+    "autoprefixer": "^9.8.6",
+    "del-cli": "^3.0.1",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-shell": "^0.8.0",
+    "postcss-import-url": "^5.1.0",
+    "readable-stream": "^3.6.0",
+    "require-dir": "^1.2.0",
+    "sass": "^1.26.11"
+  }
+}
