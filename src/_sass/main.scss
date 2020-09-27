@@ -1,2 +1,87 @@
-@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
-@import url('https://unpkg.com/basscss@8.0.2/css/basscss.css');
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css'); //normalize.css
+@import url('https://unpkg.com/basscss@8.0.2/css/basscss.css'); //BassCSS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap'); //Google Fonts
+
+:root{
+    //Font
+    --body-font: 'Montserrat', sans-serif;
+    --heading-font: 'Poppins', sans-serif;
+
+    //Colors
+    --light-shade: #ECEDF0;
+    --light-accent: #599BCF;
+    --main-color: #2364CC;
+    --dark-accent: #445690;
+    --dark-shade: #191E2C;
+    --orange: #ED7E00;
+    --black: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--light-shade);
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+.home-menu {
+    background-image: linear-gradient(to bottom, var(--light-accent), var(--main-color));
+    color: var(--light-shade);
+    font-family: var(--heading-font);
+    .home-menu-label {
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: var(--orange);
+    }
+}
+
+#site-menu {
+    ul {
+        background-color: var(--light-shade);
+    }
+}
+
+#site-sidebar {
+    @media (max-width: 52em) {
+        width: 80vw;
+    }
+    @media (min-width: 52em) {
+        width: 400px;
+    }
+}
+
+#site-footer {
+    min-height: 250px;
+    background-color: #222;
+    border-top: 8px solid var(--orange);
+    color: white;
+    a:hover {
+        color: var(--orange);
+    }
+}
+
+#countdown {
+    background-color: var(--dark-shade);
+    color: var(--light-shade);
+    #countdown-body {
+        font-size: 5rem;
+        font-family: var(--heading-font);
+    }
+}
+
+.rounded-x {
+    border-radius: 10px;
+}

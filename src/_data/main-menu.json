@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Beranda",
+        "link": "/"
+    },
+    {
+        "name": "Siapa Rudini?",
+        "link": "/#"
+    },
+    {
+        "name": "Siapa Syamsudin?",
+        "link": "/#"
+    },
+    {
+        "name": "Visi & Misi Kami",
+        "link": "/#"
+    },
+    {
+        "name": "Partai Pengusung",
+        "link": "/#"
+    },
+    {
+        "name": "Gabung Jadi Relawan",
+        "link": "/#"
+    },
+    {
+        "name": "Cara Mencoblos",
+        "link": "/#"
+    },
+    {
+        "name": "Berita Terbaru",
+        "link": "/#"
+    }
+]

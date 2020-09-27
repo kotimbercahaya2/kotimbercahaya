@@ -1,0 +1,26 @@
+<div id="countdown" class="overflow-hidden">
+    <div class="px2 py2 clearfix">
+        <div class="col col-12 md-col-6">
+            <h1 class="mb1" amp-fx="fade-in-scroll" data-margin-start="0%" data-margin-end="80%">Pilkada Serentak 2020</h1>
+            <h2 class="m0" amp-fx="fade-in-scroll" data-margin-start="0%" data-margin-end="80%">Kab. Kotawaringin Timur</h2>
+            <amp-date-countdown class="z1" end-date="2020-12-09T07:00:00+07:00" layout="fixed-height" height="500" amp-fx="fade-in-scroll" data-margin-start="0%" data-margin-end="80%">
+                <template type="amp-mustache">
+                    {% raw %}
+                    <p id="countdown-body" class="bold my3">
+                        <span>{{ d }} hari</span> <span>{{ h }} jam lagi</span>
+                    </p>
+                    <p class="m0">
+                        <span>dan {{ m }}  menit lagi</span>
+                    </p>
+                    {% endraw %}
+                </template>
+            </amp-date-countdown>
+        </div>
+        <div class="col col-12 md-col-6">
+            <div class="relative p2" style="top: 0; left: 0;">
+                <amp-img src="/assets/svg/kotim.svg" class="right relative" layout="intrinsic" height="600" width="420" style="top: 0; left: 0;" amp-fx="parallax" data-parallax-factor="0.8"></amp-img>
+                <amp-img src="/assets/svg/kotim-orange.svg" class="absolute" layout="intrinsic" height="600" width="420" style="top: 0; right: -5px;" amp-fx="parallax" data-parallax-factor="0.7"></amp-img>
+            </div>
+        </div>
+    </div>
+</div>

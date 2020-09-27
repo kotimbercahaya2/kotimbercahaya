@@ -1,0 +1,15 @@
+<amp-sidebar id="site-sidebar" class="p2" layout="nodisplay" side=left>
+    <div class="flex justify-start items-center">
+        <div role="button" on="tap:site-sidebar.close" tabindex="0" class="h1">✕</div>
+    </div>
+    <div class="flex flex-column items-center flex-auto mt3">
+        <svg width="100" height="100" class="mb2">
+            <rect width="100" height="100" style="fill:rgba(255, 255, 255, 0.0);stroke-width:3;stroke:rgb(0, 0, 0)" />
+        </svg>
+        <ul class="list-reset flex-auto">
+            {% for item in main-menu %}
+            <li class="h4 mb1"><a href="{{ item.link }}">{{ item.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</amp-sidebar>

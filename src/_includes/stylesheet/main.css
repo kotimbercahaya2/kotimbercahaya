@@ -819,3 +819,145 @@ template {
   .lg-hide{ display:none }
 }
 .display-none{ display:none }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Italic'), local('Montserrat-Italic'), url(https://fonts.gstatic.com/s/montserrat/v15/JTUQjIg1_i6t8kCHKm459Wxhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v15/JTUPjIg1_i6t8kCHKm459WxZcgvD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Italic'), local('Poppins-Italic'), url(https://fonts.gstatic.com/s/poppins/v13/pxiGyp8kv8JHgFVrJJLedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Poppins Bold Italic'), local('Poppins-BoldItalic'), url(https://fonts.gstatic.com/s/poppins/v13/pxiDyp8kv8JHgFVrJJLmy15lEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v13/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v13/pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Poppins Black'), local('Poppins-Black'), url(https://fonts.gstatic.com/s/poppins/v13/pxiByp8kv8JHgFVrLBT5V1s.ttf) format('truetype');
+}
+:root {
+  --body-font: "Montserrat", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --light-shade: #ECEDF0;
+  --light-accent: #599BCF;
+  --main-color: #2364CC;
+  --dark-accent: #445690;
+  --dark-shade: #191E2C;
+  --orange: #ED7E00;
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--light-shade);
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+
+.home-menu {
+  background-image: linear-gradient(to bottom, var(--light-accent), var(--main-color));
+  color: var(--light-shade);
+  font-family: var(--heading-font);
+}
+.home-menu .home-menu-label {
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--orange);
+}
+
+#site-menu ul {
+  background-color: var(--light-shade);
+}
+
+@media (max-width: 52em) {
+  #site-sidebar {
+    width: 80vw;
+  }
+}
+@media (min-width: 52em) {
+  #site-sidebar {
+    width: 400px;
+  }
+}
+
+#site-footer {
+  min-height: 250px;
+  background-color: #222;
+  border-top: 8px solid var(--orange);
+  color: white;
+}
+#site-footer a:hover {
+  color: var(--orange);
+}
+
+#countdown {
+  background-color: var(--dark-shade);
+  color: var(--light-shade);
+}
+#countdown #countdown-body {
+  font-size: 5rem;
+  font-family: var(--heading-font);
+}
+
+.rounded-x {
+  border-radius: 10px;
+}
