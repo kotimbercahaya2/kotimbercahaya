@@ -1,0 +1,20 @@
+<div id="post-carousel" class="px2 py4 pb3">
+    <div class="clearfix">
+        <div class="col col-12">
+            <h1 id="post-carousel-title" class="center mt0">Kabar Terbaru</h1>
+        </div>
+        <div id="post-carousel-container" class="col col-12 flex mb3">
+            {% assign posts = collections.post | sort: date | reverse %}
+            {% for post in posts limit: 10 %}
+            <article class="post-carousel-item rounded-x items-start p2 mr2">
+                <a href="{{ post.url }}"><amp-img class="rounded-x" src="{{ post.data.image }}" layout="fixed" width="218" height="163"></amp-img></a>
+                <h1 class="h3"><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+                <p class="h5 self-end">{{ post.date | dateReadable }}</p>
+            </article>
+            {% endfor %}
+        </div>
+        <div class="col col-12 flex justify-center">
+            <a id="post-carousel-button" href="#" class="h2 bold p2 rounded-x" role="button">Semua Kabar Berita</a>
+        </div>
+    </div>
+</div>

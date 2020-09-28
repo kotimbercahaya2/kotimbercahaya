@@ -1,26 +1,28 @@
 [
     {
-        "name": "Beranda",
-        "link": "/"
+        "name": "M. Rudini Darwan Ali",
+        "link": "/#",
+        "image": "/assets/img/placeholder.png"
     },
     {
-        "name": "Siapa Rudini?",
-        "link": "/#"
-    },
-    {
-        "name": "Siapa Syamsudin?",
-        "link": "/#"
+        "name": "H. Samsudin, S.Pd.I",
+        "link": "/#",
+        "image": "/assets/img/placeholder.png"
     },
     {
         "name": "Visi & Misi Kami",
         "link": "/#"
     },
     {
-        "name": "Partai Pengusung",
+        "name": "Program Unggulan",
         "link": "/#"
     },
     {
-        "name": "Gabung Jadi Relawan",
+        "name": "Jejaring Relawan",
+        "link": "/#"
+    },
+    {
+        "name": "Kabar Terkini",
         "link": "/#"
     },
     {
@@ -28,7 +30,7 @@
         "link": "/#"
     },
     {
-        "name": "Berita Terbaru",
+        "name": "Sampaikan Aspirasi",
         "link": "/#"
     }
 ]

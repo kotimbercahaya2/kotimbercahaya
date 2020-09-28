@@ -1,25 +1,12 @@
 <div class="clearfix">
-    <div class="col col-6 lg-col-3 mt2">
-        <div class="mx2">
-            <ul class="list-reset">
-                {% for item in main-menu %}
-                <li class="h4 align-left {% unless forloop.last %}mb1{% endunless %}"><a href="{{ item.link }}">{{ item.name }}</a></li>
-                {% endfor %}
-            </ul>
+    <div class="col col-12 my1">
+        {% for item in bottom-bar %}
+        <div class="col col-3">
+            <a class="flex flex-column items-center" href="{{ items.link }}">
+                <amp-img class="mb1" src="{{ item.icon }}" layout="fixed" height="35" width="35" noloading></amp-img>
+                <p class="m0" style="font-size: 0.8rem">{{ item.name }}</p>
+            </a>
         </div>
-    </div>
-    <div class="col col-6 lg-col-3 mt2">
-        <p class="center">footer column 2</p>
-    </div>
-    <div class="col col-12 lg-col-6 mt2">
-        <div class="flex flex-column items-center mx3">
-            <svg width="100" height="100">
-                <rect width="100" height="100" style="fill:rgba(255, 255, 255, 0.0);stroke-width:3;stroke:rgb(255, 255, 255)" />
-            </svg>
-            <div class="mt2 p2 border">
-                <p class="center m0">Didanai oleh Tim Pemenangan Kotim Bercahaya.</p>
-            </div>
-            <p class="mt1 center">&copy; 2020. All rights reserved.</p>
-        </div>
+        {% endfor %}
     </div>
 </div>
