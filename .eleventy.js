@@ -5,10 +5,14 @@ module.exports = function(eleventyConfig){
     //AMP Plugin
     eleventyConfig.addPlugin(ampPlugin)
 
+    //local filters
+    eleventyConfig.addPlugin(require('./plugins'))
+
     //layout aliases
     eleventyConfig.addLayoutAlias('base', 'layout/base.html')
     eleventyConfig.addLayoutAlias('layout', 'layout/layout.html')
     eleventyConfig.addLayoutAlias('home', 'layout/home.html')
+    eleventyConfig.addLayoutAlias('post', 'layout/post.html')
 
     //passthrough copy assets
     eleventyConfig.addPassthroughCopy({

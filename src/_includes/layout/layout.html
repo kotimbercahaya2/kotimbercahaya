@@ -1,13 +1,13 @@
 ---
 layout: base
 ---
-<header class="fit flex items-center justify-start px2 py2">
+<header class="fit flex items-center justify-start px2 pt2 pb1">
     {% include component/header.html %}
 </header>
 {% include component/sidebar.html %}
 <main class="flex-auto fit">
     {{ content }}
 </main>
-<footer id="site-footer" class="fit py2">
+<footer id="site-footer" class="fit fixed p0 md-hide lg-hide" amp-fx="float-in-bottom">
     {% include component/footer.html %}
 </footer>

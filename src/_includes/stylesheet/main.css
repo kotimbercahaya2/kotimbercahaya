@@ -914,7 +914,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-menu {
-  background-image: linear-gradient(to bottom, var(--light-accent), var(--main-color));
+  background-color: var(--light-accent);
   color: var(--light-shade);
   font-family: var(--heading-font);
 }
@@ -940,13 +940,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #site-footer {
-  min-height: 250px;
-  background-color: #222;
-  border-top: 8px solid var(--orange);
-  color: white;
-}
-#site-footer a:hover {
-  color: var(--orange);
+  min-height: 50px;
+  background-color: var(--light-shade);
+  color: var(--dark-shade);
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: 0 -1px 5px #999;
 }
 
 #countdown {
@@ -958,6 +959,48 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
 }
 
+#post-carousel {
+  background-color: var(--main-color);
+}
+#post-carousel #post-carousel-title {
+  font-size: 3rem;
+  color: var(--light-shade);
+}
+#post-carousel #post-carousel-container {
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#post-carousel #post-carousel-container::-webkit-scrollbar {
+  display: none;
+}
+#post-carousel #post-carousel-container article {
+  background-color: var(--light-accent);
+  width: 250px;
+  height: 400px;
+}
+#post-carousel #post-carousel-container article h1, #post-carousel #post-carousel-container article p {
+  color: var(--light-shade);
+  white-space: normal;
+}
+#post-carousel #post-carousel-button {
+  background-color: var(--light-accent);
+  color: var(--light-shade);
+}
+
+#hero img, #post-carousel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+@media (max-width: 52em) {
+  #hero, #post-carousel, #countdown {
+    min-height: 100vh;
+  }
+}
 .rounded-x {
   border-radius: 10px;
 }
