@@ -3,7 +3,9 @@
         {% for item in bottom-bar %}
         <div class="col col-3 py1 {% if page.url == '/' and forloop.first %}active{% else %}{% if page.url contains item.link %}{% unless forloop.first %}active{% endunless %}{% endif %}{% endif %}">
             <a class="flex flex-column items-center" href="{{ item.link }}">
-                <amp-img class="mb1" src="{{ item.icon }}" layout="fixed" height="25" width="25" noloading></amp-img>
+                <div class="bottom-bar-button">
+                    {{ item.icon }}
+                </div>
                 <p class="m0" style="font-size: 0.7rem">{{ item.name }}</p>
             </a>
         </div>

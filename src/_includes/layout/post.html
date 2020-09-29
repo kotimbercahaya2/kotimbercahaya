@@ -1,26 +1,20 @@
 ---
-layout: layout
+layout: content
 ---
-<div id="post" class="max-width-3 mx-auto">
-    <div class="clearfix">
-        <div class="col col-12">
-            <article class="px2">
-                <header>
-                    <h1 id="post-title" class="mt0 mb2">{{ title }}</h1>
-                    <p id="post-date" class="mt0"><time datetime="{{ page.date }}">{{ page.date | dateReadable }}</time></p>
-                    <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_1200,h_900,c_fill/images/{{ image }}.jpg" layout="responsive" width="1200" height="900"></amp-img>
-                </header>
-                <main id="post-content">
-                    {{ content }}
-                </main>
-                <footer>
-                    <div>
-                        <p>Sumber: <a href="{{ url_canonical }}">{{ url_canonical | remove: 'http:' | remove: 'https:' | remove: '//www.' }}</a></p>
-                    </div>
-                </footer>
-            </article>
+<article>
+    <header>
+        <h1 id="post-title" class="h2 mt0 mb2 mx2">{{ title }}</h1>
+        <p id="post-date" class="mt0 mx2"><time datetime="{{ page.date }}">{{ page.date | dateReadable }}</time></p>
+        <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/fetch/w_1200,h_900,c_fill/{{ image }}" layout="responsive" width="1200" height="900"></amp-img>
+    </header>
+    <main id="post-content" class="px2">
+        {{ content }}
+    </main>
+    <footer>
+        <div class="px2">
+            <p>Sumber: <a href="{{ url_canonical }}">{{ url_canonical | remove: 'http:' | remove: 'https:' | remove: '//www.' }}</a></p>
         </div>
-    </div>
-</div>
+    </footer>
+</article>
 
 
