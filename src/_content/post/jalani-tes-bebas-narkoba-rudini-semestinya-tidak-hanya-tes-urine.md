@@ -1,8 +1,7 @@
 ---
 title: "Jalani Tes Bebas Narkoba, Rudini : Semestinya Tidak Hanya Tes Urine"
 date: 2020-09-09
-eleventyComputed:
-    image: "/assets/img/{{ page.fileSlug }}/1.jpeg"
+image: jalani-tes-bebas-narkoba_otfo8b
 url_canonical: "https://www.kaltengpos.co/berita/-53420-rudini-samsudin-jalani-tes-bebas-narkoba,-rudini:-semestinya-tidak-hanya-tes-urine.html?page2#topcontent"
 ---
 PALANGKA RAYA, KALTENGPOS.CO – Pasangan bakal calon bupati dan wakil bupati Kotawaringin Timur (Kotim), H Muhammad Rudini Darwan Ali – H Samsudin menegaskan komitmen untuk memerhatikan pembinaan generasi muda dan memerangi peredaran narkoba di Bumi Habaring Hurung.

@@ -85,6 +85,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+#end {
+    background-image: linear-gradient(to bottom, var(--dark-shade), #000000);
+    min-height: 50vh;
+    @media (max-width: 52em) {
+        min-height: 100vh;
+    }
+}
+
 #post-carousel {
     background-color: var(--main-color);
     #post-carousel-title {

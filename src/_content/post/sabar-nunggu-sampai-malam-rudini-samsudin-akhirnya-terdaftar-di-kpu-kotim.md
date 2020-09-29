@@ -1,8 +1,7 @@
 ---
 title: Sabar Nunggu Sampai Malam, Rudini-Samsudin Akhirnya Terdaftar di KPU Kotim
 date: 2020-09-09
-eleventyComputed:
-    image: "/assets/img/{{ page.fileSlug }}/1.jpg"
+image: sabar-nunggu-sampai-malam_qra3af
 url_canonical: "https://www.kalamanthana.id/2020/09/04/sabar-nunggu-sampai-malam-rudini-samsudin-akhirnya-terdaftar-di-kpu-kotim/"
 ---
 KALAMANTHANA, Sampit – Cukup lama menunggu, akhirnya pasangan M Rudini Darwan Ali-Samsudin mendaftar juga ke Komisi Pemilihan Umum (KPU) Kotawaringin Timur.

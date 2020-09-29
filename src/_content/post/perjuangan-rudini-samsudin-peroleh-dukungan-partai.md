@@ -1,8 +1,7 @@
 ---
 title: Perjuangan Rudini - Samsudin Peroleh Dukungan Partai
 date: 2020-09-03
-eleventyComputed:
-    image: "/assets/img/{{ page.fileSlug }}/1.jpg"
+image: perjuangan-rudini-samsudin_osunla
 url_canonical: "https://www.borneonews.co.id/berita/183515-perjuangan-rudini---samsudin-peroleh-dukungan-partai"
 ---
 
