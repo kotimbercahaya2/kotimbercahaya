@@ -924,6 +924,45 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--orange);
 }
 
+.card {
+  font-family: var(--heading-font);
+  border-radius: 10px;
+  height: 100%;
+}
+.card.card-blue {
+  background-image: linear-gradient(to right, var(--dark-shade), var(--main-color));
+  color: var(--light-shade);
+}
+.card.card-blue .card-title {
+  color: var(--light-accent);
+}
+.card.card-yellow {
+  background-image: linear-gradient(to right, #000, var(--orange));
+  color: var(--light-shade);
+}
+.card p {
+  line-height: 1.75rem;
+}
+
+#site-header {
+  width: 100vw;
+  background-color: var(--light-shade);
+  box-shadow: 0 1px 5px #999;
+  z-index: 10;
+}
+
+#site-body {
+  padding-top: 100px;
+  color: var(--dark-shade);
+}
+#site-body #post #post-date {
+  color: var(--main-color);
+}
+#site-body #post #post-content p, #site-body #post #post-content ul, #site-body #post #post-content ol {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 #site-menu ul {
   background-color: var(--light-shade);
 }
@@ -959,6 +998,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
 }
 
+#end {
+  background-image: linear-gradient(to bottom, var(--main-color), var(--dark-shade));
+  min-height: 50vh;
+}
+@media (max-width: 52em) {
+  #end {
+    min-height: 100vh;
+  }
+}
+
 #post-carousel {
   background-color: var(--main-color);
 }
@@ -989,6 +1038,16 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--light-shade);
 }
 
+#postindex #postindex-item {
+  min-height: 400px;
+}
+
+.page-title, #visi-text a, #coming-soon-text {
+  background-image: linear-gradient(to right, var(--dark-shade), var(--main-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #hero img, #post-carousel img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1003,4 +1062,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 .rounded-x {
   border-radius: 10px;
+}
+
+.active {
+  background-color: var(--main-color);
+}
+.active .bottom-bar-button svg, .active .sidebar-icon svg {
+  fill: var(--light-shade);
+}
+.active .bottom-bar-button + p, .active .sidebar-icon + p {
+  color: var(--light-shade);
+}
+
+#visi-text a {
+  text-decoration: underline;
+}
+#visi-text a:hover {
+  background-image: linear-gradient(to right, var(--orange), var(--orange));
+}
+
+#next-button, #prev-button {
+  background-color: var(--main-color);
+  color: white;
+}
+#next-button svg, #prev-button svg {
+  height: 25px;
+  width: auto;
+  fill: var(--light-shade);
+}
+
+.bottom-bar-button svg, .sidebar-icon svg {
+  fill: var(--dark-shade);
+}
+.bottom-bar-button + p, .sidebar-icon + p {
+  color: var(--dark-shade);
+}
+
+.bottom-bar-button svg {
+  height: 25px;
+  width: 25px;
+}
+
+.sidebar-icon svg {
+  height: 35px;
+  width: 35px;
 }

@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--url_canonical-->
+    {% if url_canonical %}
+    <link rel="canonical" href="{{ url_canonical }}">
+    {% else %}
+    <link rel="canonical" href="{{ page.url }}">
+    {% endif %}
+
+    <!--style amp-custom-->
     {% include component/style.html %}
-    <title>{{ pkg.name }}</title>
+
+    <!--title-->
+    <title>
+    {% if title %}
+        {{ title }} - {{ pkg.name }}
+    {% else %}
+        {{ pkg.name }}
+    </title>
+    {% endif %}
 </head>
 <body class="flex flex-column">
     {{ content }}

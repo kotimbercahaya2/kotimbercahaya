@@ -21,13 +21,12 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-shell": "^0.8.0",
+    "markdown-it-attrs": "^3.0.3",
     "moment": "^2.29.0",
     "postcss-import-url": "^5.1.0",
     "readable-stream": "^3.6.0",
     "require-dir": "^1.2.0",
     "sass": "^1.26.11"
   },
-  "dependencies": {
-    "horizontal-scroll": "^1.1.0"
-  }
+  "dependencies": {}
 }

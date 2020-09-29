@@ -1,36 +1,36 @@
 [
     {
         "name": "M. Rudini Darwan Ali",
-        "link": "/#",
-        "image": "/assets/img/placeholder.png"
+        "link": "/profil/rudini",
+        "image": "rudini_z2j1np"
     },
     {
         "name": "H. Samsudin, S.Pd.I",
-        "link": "/#",
-        "image": "/assets/img/placeholder.png"
+        "link": "/profil/samsudin",
+        "image": "samsudin_dh4l8j"
     },
     {
         "name": "Visi & Misi Kami",
-        "link": "/#"
+        "link": "/profil/visi"
     },
     {
         "name": "Program Unggulan",
-        "link": "/#"
+        "link": "/profil/program"
     },
     {
         "name": "Jejaring Relawan",
-        "link": "/#"
+        "link": "/aspirasi/relawan"
     },
     {
         "name": "Kabar Terkini",
-        "link": "/#"
+        "link": "/posts"
     },
     {
         "name": "Cara Mencoblos",
-        "link": "/#"
+        "link": "/aspirasi/cara-mencoblos"
     },
     {
         "name": "Sampaikan Aspirasi",
-        "link": "/#"
+        "link": "/aspirasi"
     }
 ]

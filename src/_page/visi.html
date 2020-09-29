@@ -1,0 +1,48 @@
+---
+layout: layout
+permalink: profil/visi.html
+title: Visi & Misi
+visi:
+    - title: Aman
+      text: Mencakup kepastian hukum, terciptanya rasa aman, tidak adanya diskriminasi berkenaan dengan agama, suku, ras, dan antar golongan, serta terciptanya kerukunan di Kabupaten Kotawaringin Timur. Termasuk melindungi masyarakat dari narkoba dan penyakit masyarakat lainnya.
+    - title: Berkeadilan
+      text: Berkeadilan meliputi pemerataan pembangunan antar wilayah, pemerataaan pembangunan antara perdesaan dan perkotaan, serta keserasian pembangunan antar sektor pembangunan seperti infrastruktur, pendidikan, kesehatan, pertanian, dan sebagainya.
+    - title: Cerdas
+      text: Cerdas bijaksana bermakna mewujudkan kualitas sumberdaya manusia yang tangguh dan  berdaya saing, serta mempunyai kepedulian terhadap kemajuan daerah.
+    - title: Relijius
+      text: Relijius atau kesadaran pada ajaran agama akan mendorong sikap positif dalam kehidupan yang dicerminkan dengan ketaatan ibadah, ketaatan pada aturan, penghargaan atas keberagaman, serta saling toleransi antar umat beragama.
+    - title: Sejahtera
+      text: Sejahtera mencakup  peningkatan kemampuan ekonomi, pendidikan, dan kesehatan.
+---
+<div id="visi" class="px3" style="margin-bottom: 100px;">
+    <div class="clearfix mxn1">
+        <div class="col col-12 px1">
+            <div class="clearfix flex flex-wrap content-stretch mxn1">
+                <div class="col col-12 px1">
+                    <h1 class="center page-title" style="font-size: 3rem;">Visi</h1>
+                    <p id="visi-text" class="bold center" style="font-size: 2rem;">
+                        Mewujudkan Kabupaten Kotawaringin Timur yang 
+                        <a href="#aman">Aman,</a> 
+                        <a href="#berkeadilan">Berkeadilan,</a>  
+                        <a href="#cerdas">Cerdas,</a> 
+                        <a href="#relijius">Relijius,</a> dan 
+                        <a href="#sejahtera">Sejahtera.</a></p>
+                </div>
+                {% for item in visi %}
+                <div class="col col-12 sm-col-6 lg-col-4 px1 mb2">
+                    <div id="{{ item.title | downcase }}" class="card card-blue p2">
+                        <h1 class="card-title mt0">{{ item.title }}</h1>
+                        <p class="h3 mb0">{{ item.text }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="col col-12 sm-col-6 mt3"></div>
+                <div class="col col-12 sm-col-6 mt3">
+                  <div id="next-button" class="card bold right p2 mr1">
+                    <a class="h4 flex items-center" href="/profil/misi"><span class="mr1">Selanjutnya: Misi</span><span>{% include svg/right-arrow.svg %}</span></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

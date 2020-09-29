@@ -3,7 +3,7 @@
         <div class="col col-12 md-col-6 lg-col-8 px1 mt2">
             <amp-carousel class="rounded-x" type="slides" layout="responsive" height="10" width="16" role="region" autoplay loop>
                 {% for item in images %}
-                <amp-img src="{{ item }}" layout="responsive" height="900" width="1600"></amp-img>
+                <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_1200,c_fit/images/{{ item }}.jpg" layout="responsive" height="900" width="1600"></amp-img>
                 {% endfor %}
             </amp-carousel>
         </div>
@@ -15,7 +15,7 @@
                         <div class="col col-6 px1 mb2">
                             <div class="home-menu rounded-x p1" style="height: 100%;">
                                 <a href="{{ item.link }}">
-                                    <amp-img class="mt2 mx2 mb0" src="{{ item.image }}" layout="intrinsic" height="300" width="300" noloading></amp-img>
+                                    <amp-img class="mt2 mx2 mb0" src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_300,h_300,c_fit/assets/{{ item.image }}.png" layout="intrinsic" height="300" width="300" noloading></amp-img>
                                     <p class="home-menu-label center h5 bold mt0 mb1 mx1 p1">{{ item.name }}</p>
                                 </a>
                             </div>

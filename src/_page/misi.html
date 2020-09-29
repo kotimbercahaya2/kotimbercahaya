@@ -1,0 +1,43 @@
+---
+layout: layout
+permalink: profil/misi.html
+title: Misi
+misi: 
+    - Mengembangkan sistem pemerintahan yang bersih, transparan/akuntabel, berkinerja tinggi, dan mengutamakan pelayanan publik (good governance).
+    - Mendorong pemahaman dan ketaatan agama, serta toleransi diantara pemeluk agama.
+    - Meningkatkan mutu pelayanan pendidikan dan kesehatan yang dapat menjangkau masyarakat luas.  
+    - Peningkatan keamanan dan ketertiban masyarakat.
+    - Pencegahan dan penanggulangan bencana.
+    - Pemerataan dan penyelarasan pembangunan.
+    - Percepatan dan pemerataan pembangunan perdesaan.  
+    - Pengembangan ekonomi masyarakat.
+    - Meningkatkan peran serta masyarakat dan dunia usaha dalam pembangunan daerah.
+---
+<div id="misi" class="px3" style="margin-bottom: 100px;">
+    <div class="clearfix mxn1">
+        <div id="misi" class="col col-12 px1">
+            <div class="clearfix flex flex-wrap content-stretch mxn1">
+                <div class="col col-12 px1">
+                    <h1 class="center page-title" style="font-size: 3rem;">Misi</h1>
+                </div>
+                {% for item in misi %}
+                <div class="col col-12 sm-col-6 lg-col-4 px1 mb2">
+                    <div class="card card-yellow flex items-center p2">
+                        <p class="h3 bold center mx-auto">{{ item }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="col col-12 sm-col-6 mt3">
+                    <div id="prev-button" class="card bold left p2 ml1">
+                      <a class="h4 flex items-center" href="/profil/visi"><span>{% include svg/left-arrow.svg %}</span><span class="ml1">Sebelumnya: Visi</span></a>
+                    </div>
+                </div>
+                <div class="col col-12 sm-col-6 mt3">
+                    <div id="next-button" class="card bold right p2 mr1">
+                      <a class="h4 flex items-center" href="/profil/program"><span class="mr1">Selanjutnya: Program</span><span>{% include svg/right-arrow.svg %}</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
