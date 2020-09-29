@@ -1,22 +1,22 @@
 [
     {
         "name": "Beranda",
-        "link": "/#",
+        "link": "/",
         "icon": "/assets/svg/icons/home.svg"
     },
     {
         "name": "Profil",
-        "link": "/#",
+        "link": "/profil",
         "icon": "/assets/svg/icons/users.svg"
     },
     {
         "name": "Kabar",
-        "link": "/#",
+        "link": "/posts",
         "icon": "/assets/svg/icons/newspaper.svg"
     },
     {
         "name": "Aspirasi",
-        "link": "/#development=1",
+        "link": "/aspirasi",
         "icon": "/assets/svg/icons/chat.svg"
     }
 ]

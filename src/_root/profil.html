@@ -1,0 +1,17 @@
+---
+layout: layout
+permalink: profil.html
+title: Profil
+---
+<div id="profileindex" class="max-width-4 mx-auto">
+    <div class="clearfix">
+        {% for item in main-menu limit: 2 %}
+        <div class="col col-6">
+            <div class="col col-4">
+                <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_300,h_300,c_fit/assets/{{ item.image }}.png" layout="intrinsic" width="300" height="300"></amp-img>
+            </div>
+            <div class="col col-8"></div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

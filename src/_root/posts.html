@@ -1,0 +1,29 @@
+---
+layout: layout
+permalink: posts.html
+title: Kabar Berita
+pagination:
+    data: collections.post
+    size: 10
+    reverse: true
+    alias: posts
+---
+<div id="postindex" class="max-width-4 mx-auto">
+    <div class="clearfix mx2">
+        <div class="col col-12 mb3">
+            <h1 class="center m0">Kabar Berita</h1>
+        </div>
+        <div class="col col-12">
+            <div class="clearfix">
+                {% for post in posts %}
+                <article id="postindex-item" class="col col-12 md-col-6 lg-col-4 mb3">
+                    <div class="px1">
+                        <amp-img class="rounded-x px1" src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_400,h_300,c_fill/images/{{ post.data.image }}.jpg" layout="responsive" width="400" height="300"></amp-img>
+                        <h1 class="h3">{{ post.data.title }}</h1>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

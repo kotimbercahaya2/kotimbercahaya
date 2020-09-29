@@ -1,6 +1,26 @@
 ---
 layout: layout
 ---
-{{ title }}
-{{ page.date }}
-{{ content }}
+<div id="post" class="max-width-3 mx-auto">
+    <div class="clearfix">
+        <div class="col col-12">
+            <article class="px2">
+                <header>
+                    <h1 id="post-title" class="mt0 mb2">{{ title }}</h1>
+                    <p id="post-date" class="mt0"><time datetime="{{ page.date }}">{{ page.date | dateReadable }}</time></p>
+                    <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_1200,h_900,c_fill/images/{{ image }}.jpg" layout="responsive" width="1200" height="900"></amp-img>
+                </header>
+                <main id="post-content">
+                    {{ content }}
+                </main>
+                <footer>
+                    <div>
+                        <p>Sumber: <a href="{{ url_canonical }}">{{ url_canonical | remove: 'http:' | remove: 'https:' | remove: '//www.' }}</a></p>
+                    </div>
+                </footer>
+            </article>
+        </div>
+    </div>
+</div>
+
+

@@ -1,11 +1,11 @@
 ---
 layout: base
 ---
-<header class="fit flex items-center justify-start px2 pt2 pb1">
+<header id="site-header" class="fixed overflow-hidden" amp-fx="float-in-top">
     {% include component/header.html %}
 </header>
 {% include component/sidebar.html %}
-<main class="flex-auto fit">
+<main id="site-body" class="flex-auto fit">
     {{ content }}
 </main>
 <footer id="site-footer" class="fit fixed p0 md-hide lg-hide" amp-fx="float-in-bottom">

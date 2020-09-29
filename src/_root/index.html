@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: layout
 images: 
     - sabar-nunggu-sampai-malam_qra3af
     - jalani-tes-bebas-narkoba_otfo8b
@@ -7,4 +7,7 @@ images:
     - perjuangan-rudini-samsudin_osunla
 permalink: "index.html"
 ---
-<a class="mx-auto" href="/#development=1" role="button">Toggle dev mode</a>
+{% include component/home/hero.html %}
+{% include component/home/post-carousel.html %}
+{% include component/home/countdown.html %}
+{% include component/home/end.html %}

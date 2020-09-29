@@ -1,7 +1,7 @@
 <div id="post-carousel" class="px2 py4 pb3">
     <div class="clearfix">
         <div class="col col-12">
-            <h1 id="post-carousel-title" class="center mt0">Kabar Terbaru</h1>
+            <h1 id="post-carousel-title" class="center mt0">Kabar Terkini</h1>
         </div>
         <div id="post-carousel-container" class="col col-12 flex mb3">
             {% assign posts = collections.post | sort: date | reverse %}
@@ -14,7 +14,7 @@
             {% endfor %}
         </div>
         <div class="col col-12 flex justify-center">
-            <a id="post-carousel-button" href="#" class="h2 bold p2 rounded-x" role="button">Semua Kabar Berita</a>
+            <a id="post-carousel-button" href="/posts" class="h2 bold p2 rounded-x" role="button">Semua Kabar Berita</a>
         </div>
     </div>
 </div>

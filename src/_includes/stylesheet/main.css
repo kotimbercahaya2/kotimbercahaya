@@ -924,6 +924,28 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--orange);
 }
 
+#site-header {
+  width: 100vw;
+  background-color: var(--light-shade);
+  box-shadow: 0 1px 5px #999;
+  z-index: 10;
+}
+
+#site-body {
+  padding-top: 150px;
+  color: var(--dark-shade);
+}
+#site-body #post #post-title {
+  font-size: 2.5rem;
+}
+#site-body #post #post-date {
+  color: var(--main-color);
+}
+#site-body #post #post-content p, #site-body #post #post-content ul, #site-body #post #post-content ol {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 #site-menu ul {
   background-color: var(--light-shade);
 }
@@ -999,6 +1021,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--light-shade);
 }
 
+#postindex #postindex-item {
+  height: 350px;
+}
+
 #hero img, #post-carousel img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1013,4 +1039,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .rounded-x {
   border-radius: 10px;
+}
+
+.active {
+  background-color: var(--light-accent);
 }

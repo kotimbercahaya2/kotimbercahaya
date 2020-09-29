@@ -50,6 +50,32 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+#site-header {
+    width: 100vw;
+    background-color: var(--light-shade);
+    box-shadow: 0 1px 5px #999;
+    z-index: 10;
+}
+
+#site-body {
+    padding-top: 150px;
+    color: var(--dark-shade);
+    #post {
+        #post-title {
+            font-size: 2.5rem;
+        }
+        #post-date {
+            color: var(--main-color);
+        }
+        #post-content {
+            p, ul, ol {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+            }
+        }
+    }
+}
+
 #site-menu {
     ul {
         background-color: var(--light-shade);
@@ -125,6 +151,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+#postindex {
+    #postindex-item {
+        height: 350px;
+    }
+}
+
 #hero, #post-carousel {
     img {
         object-fit: cover;
@@ -140,4 +172,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .rounded-x {
     border-radius: 10px;
+}
+
+.active {
+    background-color: var(--light-accent);
 }
