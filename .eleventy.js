@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig){
 
     //AMP Plugin
     eleventyConfig.addPlugin(ampPlugin, {
+        filter: /^.*(index|profil|posts|aspirasi|404|offline).*$/,
         dir: {
             output: 'dist'
         },
@@ -33,7 +34,8 @@ module.exports = function(eleventyConfig){
 
     //passthrough copy assets
     eleventyConfig.addPassthroughCopy({
-        'src/_assets': 'assets'
+        'src/_assets': 'assets',
+        'src/_assets/favicons': '.'
     })
 
     //markdown config

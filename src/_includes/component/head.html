@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--url_canonical-->
+{% if url_canonical %}
+<link rel="canonical" href="{{ url_canonical }}">
+{% else %}
+<link rel="canonical" href="{{ page.url }}">
+{% endif %}
+
+<!--style amp-custom-->
+{% include component/style.html %}
+
+<!--favicon-->
+{% include component/favicon.html %}
+
+<!--title-->
+<title>
+{% if title %}
+    {{ title }} - Kotim Bercahaya
+{% else %}
+    Kotim Bercahaya
+</title>
+{% endif %}

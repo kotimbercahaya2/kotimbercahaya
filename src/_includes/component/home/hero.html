@@ -25,13 +25,13 @@
                 </div>
                 <div class="col col-12">
                     <div class="clearfix flex flex-wrap content-stretch">
-                    {% for item in main-menu offset: 2 %}
-                    <div class="col col-6 mb2 px1">
-                        <div class="home-menu p1 flex items-center rounded-x" style="height: 100%;">
-                            <p class="center h3 my1 bold flex-auto m0"><a href="{{ item.link }}">{{ item.name }}</a></p>
+                        {% for item in main-menu offset: 2 %}
+                        <div class="col col-6 mb2 px1">
+                            <div class="home-menu p1 flex items-center rounded-x" style="height: 100%;">
+                                <p class="center h3 my1 bold flex-auto m0"><a href="{{ item.link }}">{{ item.name }}</a></p>
+                            </div>
                         </div>
-                    </div>
-                    {% endfor %}
+                        {% endfor %}
                     </div>
                 </div>
             </div>

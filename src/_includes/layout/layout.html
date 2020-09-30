@@ -11,3 +11,8 @@ layout: base
 <footer id="site-footer" class="fit fixed p0 md-hide lg-hide" amp-fx="float-in-bottom">
     {% include component/footer.html %}
 </footer>
+<amp-install-serviceworker
+    src="/sw.js"
+    data-iframe-src="/sw.html"
+    layout="nodisplay">
+</amp-install-serviceworker>
