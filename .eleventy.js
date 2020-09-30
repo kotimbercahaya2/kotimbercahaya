@@ -1,11 +1,13 @@
 const markdown = require('markdown-it')
 const attrs = require('markdown-it-attrs')
 const ampPlugin = require('@ampproject/eleventy-plugin-amp')
+const typeset = require('eleventy-plugin-typeset')
 
 module.exports = function(eleventyConfig){
 
     //AMP Plugin
     eleventyConfig.addPlugin(ampPlugin, {
+        filter: /^.*(index|profil|posts|aspirasi|404|offline).*$/,
         dir: {
             output: 'dist'
         },
@@ -13,6 +15,11 @@ module.exports = function(eleventyConfig){
             urlPath: '/assets/img/o/'
         }
     })
+
+    //typeset plugin
+    eleventyConfig.addPlugin(typeset({
+        disable: ['ligatures', 'hyphenate']
+    }))
 
     //local filters
     eleventyConfig.addPlugin(require('./plugins'))
@@ -27,7 +34,8 @@ module.exports = function(eleventyConfig){
 
     //passthrough copy assets
     eleventyConfig.addPassthroughCopy({
-        'src/_assets': 'assets'
+        'src/_assets': 'assets',
+        'src/_assets/favicons': '.'
     })
 
     //markdown config

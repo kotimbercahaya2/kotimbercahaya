@@ -1,7 +1,7 @@
 <amp-sidebar id="site-sidebar" class="relative" layout="nodisplay" side=left>
     <div role="button" class="absolute h1 bold" on="tap:site-sidebar.close" tabindex="0" style="top: 28px; left: 20px; z-index: 10;">✕</div>
     <div class="flex flex-column items-start">
-        <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_400,h_300,c_fit/assets/header_hhl2ar.jpg" layout="fixed" height="300" width="400"></amp-img>
+        <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_400,h_300,c_fit,f_auto/assets/header.jpg" layout="fixed" height="300" width="400"></amp-img>
         <ul class="list-reset flex-auto m0" style="width: 100%;">
             {% for item in bottom-bar %}
             <li class="h4 pl3 py2 {% if page.url == '/' and forloop.first %}active{% else %}{% if page.url contains item.link %}{% unless forloop.first %}active{% endunless %}{% endif %}{% endif %}">
