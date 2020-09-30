@@ -14,6 +14,7 @@
     --dark-accent: #445690;
     --dark-shade: #191E2C;
     --orange: #ED7E00;
+    --dark-orange: #804400;
     --black: #000000;
 }
 
@@ -38,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-menu {
-    background-color: var(--light-accent);
+    background-color: var(--main-color);
     color: var(--light-shade);
     font-family: var(--heading-font);
     .home-menu-label {
@@ -68,6 +69,20 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.program-accordion {
+    amp-accordion {
+        &.card {
+            header {
+                background-color: transparent;
+                border: none;
+            }
+        }
+        ul, ol {
+            line-height: 1.6rem;
+        }
+    }
+}
+
 #site-header {
     width: 100vw;
     background-color: var(--light-shade);
@@ -86,6 +101,7 @@ h1, h2, h3, h4, h5, h6 {
             p, ul, ol {
                 font-size: 1.25rem;
                 line-height: 1.75rem;
+                text-align: justify;
             }
         }
     }
@@ -117,12 +133,9 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 -1px 5px #999;
 }
 
-#countdown {
-    background-color: var(--dark-shade);
-    color: var(--light-shade);
-    #countdown-body {
-        font-size: 5rem;
-        font-family: var(--heading-font);
+#hero-image {
+    @media (max-width: 52em) {
+        height: 240px;
     }
 }
 
@@ -242,4 +255,58 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-icon svg {
     height: 35px;
     width: 35px;
+}
+
+.profile-icon {
+    svg {
+        width: 75px;
+        height: 75px;
+        fill: var(--light-shade);
+    }
+}
+
+.profile-link {
+    margin-top: auto;
+    &:hover {
+        background-color: var(--orange);
+    }
+}
+
+#profil-rudini {
+    background-image: linear-gradient(to right, var(--dark-shade), var(--main-color));
+    #profil-rudini-text {
+        color: var(--light-shade);
+        h1 {
+            font-size: 3rem;
+        }
+        @media (max-width: 40em) {
+            text-align: center;
+        }
+    }
+    #profil-rudini-image {
+        text-align: right;
+        @media (max-width: 40em) {
+            text-align: center;
+        }
+    }
+}
+
+#profil-samsudin {
+    background-image: linear-gradient(to left, var(--dark-orange), var(--orange));
+    #profil-samsudin-text {
+        color: var(--light-shade);
+        text-align: right;
+        h1 {
+            font-size: 3rem;
+        }
+        @media (max-width: 40em) {
+            text-align: center;
+        }
+    }
+    #profil-samsudin-image {
+        text-align: left;
+        @media (max-width: 40em) {
+            text-align: center;
+        }
+    }
 }

@@ -9,7 +9,7 @@
             <article class="post-carousel-item rounded-x items-start p2 mr2">
                 <a href="{{ post.url }}"><amp-img class="rounded-x" src="https://res.cloudinary.com/kotimbercahaya/image/fetch/w_218,h_163,c_fit/{{ post.data.image }}" layout="fixed" width="218" height="163"></amp-img></a>
                 <h1 class="h3"><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
-                <p class="h5 self-end">{{ post.date | dateReadable }}</p>
+                <p class="h5 self-end" style="margin-top: auto;"><time datetime="{{ post.date }}">{{ post.date | dateReadable }}</time></p>
             </article>
             {% endfor %}
         </div>

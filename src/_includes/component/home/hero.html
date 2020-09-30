@@ -1,13 +1,13 @@
 <div id="hero" class="px2 mb3">
     <div class="clearfix flex flex-wrap content-stretch mxn1">
-        <div class="col col-12 md-col-6 lg-col-8 px1 mt2">
-            <amp-carousel class="rounded-x" type="slides" layout="responsive" height="10" width="16" role="region" autoplay loop>
+        <div class="col col-12 md-col-8 lg-col-8 relative px1 mt2">
+            <amp-carousel class="rounded-x" type="slides" layout="responsive" width="16" height="10" role="region" autoplay loop>
                 {% for item in images %}
-                <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_1200,c_fit/images/{{ item }}.jpg" layout="responsive" height="900" width="1600"></amp-img>
+                <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_1242,h_556,c_fit,f_auto/images/{{ item }}.jpg" layout="responsive" height="10" width="16"></amp-img>
                 {% endfor %}
             </amp-carousel>
         </div>
-        <div class="col col-12 md-col-6 lg-col-4 px2 mt2">
+        <div class="col col-12 md-col-4 lg-col-4 px2 mt2">
             <div class="clearfix mxn2">
                 <div class="col col-12">
                     <div class="clearfix flex flex-wrap content-stretch">
@@ -28,7 +28,7 @@
                     {% for item in main-menu offset: 2 %}
                     <div class="col col-6 mb2 px1">
                         <div class="home-menu p1 flex items-center rounded-x" style="height: 100%;">
-                            <p class="align-left h3 my1 bold m0"><a href="{{ item.link }}">{{ item.name }}</a></p>
+                            <p class="center h3 my1 bold flex-auto m0"><a href="{{ item.link }}">{{ item.name }}</a></p>
                         </div>
                     </div>
                     {% endfor %}

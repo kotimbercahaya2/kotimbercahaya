@@ -15,6 +15,7 @@
     "@ampproject/eleventy-plugin-amp": "^0.5.3",
     "autoprefixer": "^9.8.6",
     "del-cli": "^3.0.1",
+    "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.2",
     "gulp-postcss": "^9.0.0",

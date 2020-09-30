@@ -1,6 +1,7 @@
 const markdown = require('markdown-it')
 const attrs = require('markdown-it-attrs')
 const ampPlugin = require('@ampproject/eleventy-plugin-amp')
+const typeset = require('eleventy-plugin-typeset')
 
 module.exports = function(eleventyConfig){
 
@@ -13,6 +14,11 @@ module.exports = function(eleventyConfig){
             urlPath: '/assets/img/o/'
         }
     })
+
+    //typeset plugin
+    eleventyConfig.addPlugin(typeset({
+        disable: ['ligatures', 'hyphenate']
+    }))
 
     //local filters
     eleventyConfig.addPlugin(require('./plugins'))

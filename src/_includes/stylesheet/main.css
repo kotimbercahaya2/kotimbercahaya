@@ -891,6 +891,7 @@ template {
   --dark-accent: #445690;
   --dark-shade: #191E2C;
   --orange: #ED7E00;
+  --dark-orange: #804400;
   --black: #000000;
 }
 
@@ -914,7 +915,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-menu {
-  background-color: var(--light-accent);
+  background-color: var(--main-color);
   color: var(--light-shade);
   font-family: var(--heading-font);
 }
@@ -944,6 +945,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.75rem;
 }
 
+.program-accordion amp-accordion.card header {
+  background-color: transparent;
+  border: none;
+}
+.program-accordion amp-accordion ul, .program-accordion amp-accordion ol {
+  line-height: 1.6rem;
+}
+
 #site-header {
   width: 100vw;
   background-color: var(--light-shade);
@@ -961,6 +970,7 @@ h1, h2, h3, h4, h5, h6 {
 #site-body #post #post-content p, #site-body #post #post-content ul, #site-body #post #post-content ol {
   font-size: 1.25rem;
   line-height: 1.75rem;
+  text-align: justify;
 }
 
 #site-menu ul {
@@ -989,13 +999,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 -1px 5px #999;
 }
 
-#countdown {
-  background-color: var(--dark-shade);
-  color: var(--light-shade);
-}
-#countdown #countdown-body {
-  font-size: 5rem;
-  font-family: var(--heading-font);
+@media (max-width: 52em) {
+  #hero-image {
+    height: 240px;
+  }
 }
 
 #end {
@@ -1106,4 +1113,64 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-icon svg {
   height: 35px;
   width: 35px;
+}
+
+.profile-icon svg {
+  width: 75px;
+  height: 75px;
+  fill: var(--light-shade);
+}
+
+.profile-link {
+  margin-top: auto;
+}
+.profile-link:hover {
+  background-color: var(--orange);
+}
+
+#profil-rudini {
+  background-image: linear-gradient(to right, var(--dark-shade), var(--main-color));
+}
+#profil-rudini #profil-rudini-text {
+  color: var(--light-shade);
+}
+#profil-rudini #profil-rudini-text h1 {
+  font-size: 3rem;
+}
+@media (max-width: 40em) {
+  #profil-rudini #profil-rudini-text {
+    text-align: center;
+  }
+}
+#profil-rudini #profil-rudini-image {
+  text-align: right;
+}
+@media (max-width: 40em) {
+  #profil-rudini #profil-rudini-image {
+    text-align: center;
+  }
+}
+
+#profil-samsudin {
+  background-image: linear-gradient(to left, var(--dark-orange), var(--orange));
+}
+#profil-samsudin #profil-samsudin-text {
+  color: var(--light-shade);
+  text-align: right;
+}
+#profil-samsudin #profil-samsudin-text h1 {
+  font-size: 3rem;
+}
+@media (max-width: 40em) {
+  #profil-samsudin #profil-samsudin-text {
+    text-align: center;
+  }
+}
+#profil-samsudin #profil-samsudin-image {
+  text-align: left;
+}
+@media (max-width: 40em) {
+  #profil-samsudin #profil-samsudin-image {
+    text-align: center;
+  }
 }

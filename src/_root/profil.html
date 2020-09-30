@@ -1,17 +1,67 @@
 ---
-layout: soon
+layout: layout
 permalink: profil.html
 title: Profil
 ---
-<div id="profileindex" class="max-width-4 mx-auto">
+<div id="profileindex" style="margin-bottom: 100px;">
     <div class="clearfix">
-        {% for item in main-menu limit: 2 %}
-        <div class="col col-6">
-            <div class="col col-4">
-                <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_300,h_300,c_fit/assets/{{ item.image }}.png" layout="intrinsic" width="300" height="300"></amp-img>
+        <div id="profil-rudini" class="col col-12 px2 pt3">
+            <div id="profil-rudini-text" class="col-right col-12 sm-col-6 lg-col-8">
+                <p class="mb1">{{ 'Calon Bupati Kotawaringin Timur' | upcase }}</p>
+                <h1 class="mt0">M. Rudini Darwan Ali</h1>
+                <a class="profile-link h3 bold rounded-x border p1" role="button" href="/profil/rudini">{{ 'Profil' | upcase }}</a>
             </div>
-            <div class="col col-8"></div>
+            <div id="profil-rudini-image" class="col-right col-12 sm-col-6 lg-col-4 mt3">
+                <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_300,h_300,c_fit,f_auto/assets/rudini.png" layout="intrinsic" width="300" height="300"></amp-img>
+            </div>
         </div>
-        {% endfor %}
+        <div id="profil-samsudin" class="col col-12 px2 pt3">
+            <div id="profil-samsudin-text" class="col col-12 sm-col-6 lg-col-8">
+                <p class="mb1">{{ 'Calon Wakil Bupati Kotawaringin Timur' | upcase }}</p>
+                <h1 class="mt0">H. Samsudin, S.Pd.I</h1>
+                <a class="profile-link h3 bold rounded-x border p1" role="button" href="/profil/samsudin">{{ 'Profil' | upcase }}</a>
+            </div>
+            <div id="profil-samsudin-image" class="col col-12 sm-col-6 lg-col-4 mt3">
+                <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_300,h_300,c_fit,f_auto/assets/samsudin.png" layout="intrinsic" width="300" height="300"></amp-img>
+            </div>
+        </div>
+        <div id="kenali-lebih-jauh" class="col col-12 pt3">
+            <div class="col col-12">
+                <h1 class="page-title center mt0">Kenali Lebih Jauh</h1>
+            </div>
+            <div class="col col-12">
+                <div class="max-width-4 mx-auto">
+                    <div class="clearfix flex flex-wrap content-stretch">
+                        <div class="col col-12 md-col-4 lg-col-4 px1 mb2">
+                            <div class="card card-blue flex flex-column items-center p2">
+                                <div class="profile-icon">
+                                    {% include svg/lamp.svg %}
+                                </div>
+                                <h1 class="center">Visi</h1>
+                                <a class="profile-link h3 center bold rounded-x border p1" role="button" href="/profil/visi">{{ 'Kenali Visi' | upcase }}</a>
+                            </div>
+                        </div>
+                        <div class="col col-12 md-col-4 lg-col-4 px1 mb2">
+                            <div class="card card-blue flex flex-column items-center p2">
+                                <div class="profile-icon">
+                                    {% include svg/target.svg %}
+                                </div>
+                                <h1 class="center">Misi</h1>
+                                <a class="profile-link h3 center bold rounded-x border p1" role="button" href="/profil/misi">{{ 'Pelajari Misi' | upcase }}</a>
+                            </div>
+                        </div>
+                        <div class="col col-12 md-col-4 lg-col-4 px1 mb2">
+                            <div class="card card-blue flex flex-column items-center p2">
+                                <div class="profile-icon">
+                                    {% include svg/suitcase.svg %}
+                                </div>
+                                <h1 class="center">Program Unggulan</h1>
+                                <a class="profile-link h3 center bold rounded-x border p1" role="button" href="/profil/program">{{ 'Ketahui Program' | upcase }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
