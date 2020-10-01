@@ -35,7 +35,7 @@ module.exports = function(eleventyConfig){
     //passthrough copy assets
     eleventyConfig.addPassthroughCopy({
         'src/_assets': 'assets',
-        'src/_assets/favicons': '.'
+        'src/_assets/static': '.'
     })
 
     //markdown config
