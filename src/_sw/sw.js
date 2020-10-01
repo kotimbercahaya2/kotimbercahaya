@@ -3,6 +3,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
 workbox.core.skipWaiting()
 workbox.core.clientsClaim()
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST)
+workbox.precaching.cleanupOutdatedCaches()
 
 workbox.routing.setDefaultHandler(
     new workbox.strategies.NetworkFirst({
@@ -11,7 +12,7 @@ workbox.routing.setDefaultHandler(
 )
 
 workbox.routing.registerRoute(
-    ({url}) => url.origin === 'https://fonts.gstatic.com',
+    ({url}) => url.origin === 'https://fonts.gstatic.com' || url.origin === 'https://fonts.googleapis.com',
     new workbox.strategies.CacheFirst({
         cacheName: 'fonts',
         plugins: [
@@ -31,7 +32,7 @@ workbox.routing.registerRoute(
         cacheName: 'images',
         plugins: [
             new workbox.cacheableResponse.CacheableResponsePlugin({
-                statuses: [200]
+                statuses: [0, 200]
             }),
             new workbox.expiration.ExpirationPlugin({
                 maxEntries: 50,
@@ -47,7 +48,7 @@ workbox.routing.registerRoute(
         cacheName: 'pages',
         plugins: [
             new workbox.cacheableResponse.CacheableResponsePlugin({
-                statuses: [200],
+                statuses: [0, 200],
             }),
             new workbox.expiration.ExpirationPlugin({
                 maxAgeSeconds: 60 * 60 * 24 * 3

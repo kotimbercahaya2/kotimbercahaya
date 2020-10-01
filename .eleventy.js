@@ -2,6 +2,7 @@ const markdown = require('markdown-it')
 const attrs = require('markdown-it-attrs')
 const ampPlugin = require('@ampproject/eleventy-plugin-amp')
 const typeset = require('eleventy-plugin-typeset')
+const htmlmin = require('html-minifier')
 
 module.exports = function(eleventyConfig){
 
@@ -10,9 +11,6 @@ module.exports = function(eleventyConfig){
         filter: /^.*(index|profil|posts|aspirasi|404|offline).*$/,
         dir: {
             output: 'dist'
-        },
-        imageOptimization: {
-            urlPath: '/assets/img/o/'
         }
     })
 
@@ -45,6 +43,26 @@ module.exports = function(eleventyConfig){
     })
     .use(attrs)
     eleventyConfig.setLibrary('md', markdownLib)
+
+    //minify output
+    eleventyConfig.addTransform('minify', function(content, outputPath) {
+        if (outputPath.endsWith('.html')) {
+            let minified = htmlmin.minify(content, {
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true,
+                removeTagWhitespace: true,
+                minifyJS: true,
+                minifyCSS: true,
+                processScripts: [
+                    "text/javascript",
+                    "application/ld+json"
+                ]
+            })
+            return minified
+        }
+        return content
+    })
 
     // default i/o directory
     return {

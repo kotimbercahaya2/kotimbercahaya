@@ -8,25 +8,43 @@ pagination:
     alias: posts
 permalink: "/posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}.html{% else %}index.html{% endif %}"
 ---
-<div id="postindex" class="max-width-4 mx-auto">
-    <div class="clearfix mx2">
+<div id="postindex" class="max-width-4 mx-auto" style="margin-bottom: 100px;">
+    <div class="clearfix pt2 mx2">
         <div class="col col-12 mb3">
             <h1 id="postindex-title" class="page-title center m0">Kabar Berita</h1>
         </div>
         <div class="col col-12">
-            <div class="clearfix">
+            <div class="clearfix flex flex-wrap content-stretch">
                 {% for post in posts %}
-                <article id="postindex-item" class="col col-12 md-col-6 lg-col-4 mb3">
-                    <div class="px1">
-                        <a href="{{ post.url }}">
-                            <amp-img class="rounded-x px1" src="https://res.cloudinary.com/kotimbercahaya/image/fetch/w_400,h_300,c_fill,f_auto/{{ post.data.image }}" layout="responsive" width="400" height="300"></amp-img>
+                <article id="postindex-item" class="col col-12 md-col-6 lg-col-4 mb2">
+                    <div class="flex flex-column items-start px1" style="height: 100%;">
+                        <a href="{{ post.url }}" style="width: 100%;">
+                            <amp-img class="rounded-x px1" src="https://res.cloudinary.com/kotimbercahaya/image/fetch/w_400,h_300,c_fill,f_auto/{{ post.data.image }}" srcset="https://res.cloudinary.com/kotimbercahaya/image/fetch/w_327,h_233,c_fill,f_auto/{{ post.data.image }} 375w, https://res.cloudinary.com/kotimbercahaya/image/fetch/w_366,h_267,c_fill,f_auto/{{ post.data.image }} 414w, https://res.cloudinary.com/kotimbercahaya/image/fetch/w_492,h_357,c_fill,f_auto/{{ post.data.image }} 540w, https://res.cloudinary.com/kotimbercahaya/image/fetch/w_720,h_528,c_fill,f_auto/{{ post.data.image }} 768w" layout="responsive" width="400" height="300"></amp-img>
                         </a>
                         <h1 class="h3"><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
-                        <p class="m0"><time datetime="{{ post.date }}">{{ post.date | dateReadable }}</time></p>
+                        <p class="mb0" style="margin-top: auto;"><time datetime="{{ post.date }}">{{ post.date | dateReadable }}</time></p>
                     </div>
                 </article>
                 {% endfor %}
             </div>
         </div>
+        {% if pagination.href.previous or pagination.href.next %}
+        <div class="col col-12">
+            <div class="col col-12 sm-col-6 mt3">
+                {% if pagination.href.previous %}
+                <div id="prev-button" class="card bold left p2 ml1">
+                    <a class="h4 flex items-center" href="{{ pagination.href.previous }}"><span>{% include svg/left-arrow.svg %}</span><span class="ml1">Sebelumnya</span></a>
+                </div>
+                {% endif %}
+            </div>
+            <div class="col col-12 sm-col-6 mt3">
+                {% if pagination.href.next %}
+                <div id="next-button" class="card bold right p2 mr1">
+                    <a class="h4 flex items-center" href="{{ pagination.href.next }}"><span class="mr1">Selanjutnya</span><span>{% include svg/right-arrow.svg %}</span></a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
     </div>
 </div>
