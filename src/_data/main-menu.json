@@ -1,12 +1,12 @@
 [
     {
         "name": "M. Rudini Darwan Ali",
-        "link": "/profil/rudini",
+        "link": "/profil/",
         "image": "rudini"
     },
     {
         "name": "H. Samsudin, S.Pd.I",
-        "link": "/profil/samsudin",
+        "link": "/profil/",
         "image": "samsudin"
     },
     {
@@ -18,19 +18,19 @@
         "link": "/profil/program"
     },
     {
-        "name": "Jejaring Relawan",
-        "link": "/aspirasi/relawan"
-    },
-    {
         "name": "Kabar Terkini",
         "link": "/posts"
     },
     {
         "name": "Cara Mencoblos",
-        "link": "/aspirasi/cara-mencoblos"
+        "link": "/aspirasi#cara-mencoblos"
     },
     {
         "name": "Sampaikan Aspirasi",
         "link": "/aspirasi"
+    },
+    {
+        "name": "Install Aplikasi",
+        "link": "/install"
     }
 ]

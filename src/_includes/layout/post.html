@@ -5,7 +5,7 @@ layout: content
     <header>
         <h1 id="post-title" class="h1 mt0 mb2 mx2">{{ title }}</h1>
         <p id="post-date" class="mt0 mx2"><time datetime="{{ page.date }}">{{ page.date | dateReadable }}</time></p>
-        <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/fetch/w_1200,h_900,c_fill,f_auto/{{ image }}" layout="responsive" width="1200" height="900"></amp-img>
+        <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/fetch/w_1200,h_900,c_fill,f_auto/{{ image }}" srcset="https://res.cloudinary.com/kotimbercahaya/image/fetch/w_327,h_233,c_fill,f_auto/{{ image }} 375w, https://res.cloudinary.com/kotimbercahaya/image/fetch/w_366,h_267,c_fill,f_auto/{{ image }} 414w, https://res.cloudinary.com/kotimbercahaya/image/fetch/w_492,h_357,c_fill,f_auto/{{ image }} 540w, https://res.cloudinary.com/kotimbercahaya/image/fetch/w_720,h_528,c_fill,f_auto/{{ image }} 768w" layout="responsive" width="1200" height="900"></amp-img>
     </header>
     <main id="post-content" class="px2">
         {{ content }}
@@ -13,6 +13,16 @@ layout: content
     <footer>
         <div class="px2">
             <p id="post-credit">Sumber: <a href="{{ url_canonical }}" target="_blank" rel="nofollow">{{ url_canonical | remove: 'http:' | remove: 'https:' | remove: '//www.' }}</a></p>
+        </div>
+        <div class="clearfix">
+            <div class="col col-12">
+                <div class="col col-12 sm-col-6 mt3">
+                    <div id="prev-button" class="card bold left p2 ml1">
+                        <a class="h4 flex items-center" href="/posts"><span>{% include svg/left-arrow.svg %}</span><span class="ml1">Semua Berita</span></a>
+                    </div>
+                </div>
+                <div class="col col-12 sm-col-6 mt3"></div>
+            </div>
         </div>
     </footer>
 </article>

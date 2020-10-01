@@ -4,7 +4,7 @@
         <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_400,h_300,c_fit,f_auto/assets/header.jpg" layout="fixed" height="300" width="400"></amp-img>
         <ul class="list-reset flex-auto m0" style="width: 100%;">
             {% for item in bottom-bar %}
-            <li class="h4 pl3 py2 {% if page.url == '/' and forloop.first %}active{% else %}{% if page.url contains item.link %}{% unless forloop.first %}active{% endunless %}{% endif %}{% endif %}">
+            <li class="h4 noselect pl3 py2 {% if page.url == '/' and forloop.first %}active{% else %}{% if page.url contains item.link %}{% unless forloop.first %}active{% endunless %}{% endif %}{% endif %}">
                 <a href="{{ item.link }}" class="flex items-center">
                     <div class="sidebar-icon mr2">
                         {{ item.icon }}

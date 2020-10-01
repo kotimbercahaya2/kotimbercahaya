@@ -3,7 +3,9 @@
         <div class="col col-12 md-col-8 lg-col-8 relative px1 mt2">
             <amp-carousel class="rounded-x" type="slides" layout="responsive" width="16" height="10" role="region" autoplay loop>
                 {% for item in images %}
-                <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_1242,h_556,c_fit,f_auto/images/{{ item }}.jpg" layout="responsive" height="10" width="16"></amp-img>
+                <amp-img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_1242,h_556,c_fill,f_auto/images/{{ item }}.jpg" 
+                         srcset="https://res.cloudinary.com/kotimbercahaya/image/upload/w_343,h_215,c_fill,f_auto/images/{{ item }}.jpg 375w, https://res.cloudinary.com/kotimbercahaya/image/upload/w_382,h_239,c_fill,f_auto/images/{{ item }}.jpg 414w, https://res.cloudinary.com/kotimbercahaya/image/upload/w_508,h_317,c_fill,f_auto/images/{{ item }}.jpg 540w, https://res.cloudinary.com/kotimbercahaya/image/upload/w_736,h_460,c_fill,f_auto/images/{{ item }}.jpg 768w,"
+                         layout="responsive" height="10" width="16"></amp-img>
                 {% endfor %}
             </amp-carousel>
         </div>
@@ -12,7 +14,7 @@
                 <div class="col col-12">
                     <div class="clearfix flex flex-wrap content-stretch">
                         {% for item in main-menu limit: 2 %}
-                        <div class="col col-6 px1 mb2">
+                        <div class="col col-6 noselect px1 mb2">
                             <div class="home-menu rounded-x p1" style="height: 100%;">
                                 <a href="{{ item.link }}">
                                     <amp-img class="mt2 mx2 mb0" src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_300,h_300,c_fit/assets/{{ item.image }}.png" layout="intrinsic" height="300" width="300" noloading></amp-img>
@@ -26,8 +28,8 @@
                 <div class="col col-12">
                     <div class="clearfix flex flex-wrap content-stretch">
                         {% for item in main-menu offset: 2 %}
-                        <div class="col col-6 mb2 px1">
-                            <div class="home-menu p1 flex items-center rounded-x" style="height: 100%;">
+                        <div class="col col-6 noselect mb2 px1">
+                            <div class="home-menu p1 flex items-center rounded-x" role="button" style="height: 100%;">
                                 <p class="center h3 my1 bold flex-auto m0"><a href="{{ item.link }}">{{ item.name }}</a></p>
                             </div>
                         </div>

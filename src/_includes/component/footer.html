@@ -1,7 +1,7 @@
 <div class="clearfix">
     <div class="col col-12">
         {% for item in bottom-bar %}
-        <div class="col col-3 py1 {% if page.url == '/' and forloop.first %}active{% else %}{% if page.url contains item.link %}{% unless forloop.first %}active{% endunless %}{% endif %}{% endif %}">
+        <div class="col col-3 noselect py1 {% if page.url == '/' and forloop.first %}active{% else %}{% if page.url contains item.link %}{% unless forloop.first %}active{% endunless %}{% endif %}{% endif %}">
             <a class="flex flex-column items-center" href="{{ item.link }}">
                 <div class="bottom-bar-button">
                     {{ item.icon }}

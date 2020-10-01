@@ -1045,10 +1045,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--light-shade);
 }
 
-#postindex #postindex-item {
-  min-height: 400px;
-}
-
 .page-title, #visi-text a, #coming-soon-text {
   background-image: linear-gradient(to right, var(--dark-shade), var(--main-color));
   -webkit-background-clip: text;
@@ -1173,4 +1169,11 @@ h1, h2, h3, h4, h5, h6 {
   #profil-samsudin #profil-samsudin-image {
     text-align: center;
   }
+}
+
+.noselect {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
