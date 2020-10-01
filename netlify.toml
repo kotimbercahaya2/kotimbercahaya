@@ -7,7 +7,7 @@
     autoLaunch = false
 
 [[redirects]]
-    from = "/.wellknown/*"
+    from = "/.well-known/*"
     to = "/wellknown/:splat"
     status = 200
     force = true
