@@ -5,3 +5,9 @@
 [dev]
     command = "yarn start"
     autoLaunch = false
+
+[[redirects]]
+    from = "/.wellknown/*"
+    to = "/wellknown/:splat"
+    status = 200
+    force = true
