@@ -1,4 +1,5 @@
 [{
       "relation": ["delegate_permission/common.handle_all_urls"],
       "target" : { "namespace": "android_app", "package_name": "app.netlify.kotimbercahaya.twa",
-                   "sha256_cert_fingerprints": ["77:24:0A:48:20:A8:61:FA:3A:83:CB:5F:54:48:B4:C7:3C:D2:65:E1:31:A5:4E:6$    }]
+                   "sha256_cert_fingerprints": ["11:1D:88:79:82:64:EE:6B:24:F3:34:06:13:67:FE:39:43:9C:DC:D0:3D:4B:FD:B2:54:C6:45:FE:6B:19:27:C7"] }
+    }]
