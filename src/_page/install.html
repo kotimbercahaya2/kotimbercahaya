@@ -1,5 +1,46 @@
 ---
-layout: soon
-permalink: install/index.html
-title: Salurkan Aspirasi
+layout: false
+permalink: install.html
+title: Install Aplikasi
 ---
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include component/metadata.html %}
+    {% include component/favicon.html %}
+    {% include component/style.html %}
+    <title>{{ title }} - {{ site.description }}</title>
+</head>
+<body id="install-page">
+    <div class="fit flex">
+        <div class="clearfix flex flex-wrap flex-auto content-stretch mx2">
+            <div class="col col-12 md-col-6 flex flex-column justify-center pl2">
+                <a class="mb1" href="/"><img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_80,h_80,o_75,c_fill,f_auto/assets/logo-num-white.png" width="80" height="80" alt="Logo Kotim Bercahaya"></a>
+                <h1 class="block m0 mb2" style="font-size: 3rem;">{{ title }}</h1>
+                <p class="h3 mt0 mb2">Dukung perjuangan Rudini-Samsudin untuk #KotimBercahaya, cukup dengan tap tombol di bawah ini.</p>
+                <pwa-install installbuttontext="Install Aplikasi"
+                             cancelbuttontext="Batal"
+                             descriptionheader="Tentang Aplikasi Ini"
+                             explainer="Dapat diinstall di semua perangkat Android/iOS/PC dengan browser Chrome/Edge versi terbaru. Setelah menekan tombol Install di bawah, konfirmasi dengan menekan Install pada jendela popup yang muncul. Untuk perangkat berbasis iOS, install dengan cara menekan tombol Share, kemudian Add to Homescreen."
+                             iosinstallinfotext="Install dengan cara menekan tombol Share, kemudian Add to Homescreen."
+                             showopen="true"></pwa-install>
+                <p class="mb0 mt1"><small><i>Mendukung Android, iOS, dan PC (dengan browser Chrome/Edge terbaru)</i></small></p>
+                <p class="mt3 mb0"><a href="/">&larr; Kembali ke Beranda</a></p>
+            </div>
+            <div class="col col-12 md-col-6 overflow-hidden flex justify-center relative" >
+                <div id="phone-image" class="absolute">
+                    <img src="https://res.cloudinary.com/kotimbercahaya/image/upload/w_240,f_auto/images/mockup.png" width="100%" height="100%" alt="{{ title }}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>
+    <script type="text/javascript">
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+        }
+    </script>
+</body>
+</html>

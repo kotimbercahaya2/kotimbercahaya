@@ -57,6 +57,13 @@ workbox.routing.registerRoute(
     })
 )
 
+workbox.routing.registerRoute(
+    ({request}) => request.destination === 'script' || request.destination === 'style',
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: 'resources'
+    })
+)
+
 // for development purposes
 
 workbox.routing.registerRoute(
