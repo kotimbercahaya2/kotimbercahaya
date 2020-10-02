@@ -11,3 +11,9 @@
     to = "/wellknown/:splat"
     status = 200
     force = true
+
+[[redirects]]
+    from = "https://kotimbercahaya.netlify.app/*"
+    to = "https://kotimbercahaya.net/:splat"
+    status = 301
+    force = true
