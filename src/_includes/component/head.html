@@ -3,7 +3,7 @@
 <link rel="dns-prefetch" href="https://cdn.ampproject.org/">
 
 <!--url_canonical-->
-<link rel="canonical" href="{{ page.url }}">
+<link rel="canonical" href="{{ page.url | prepend: site.url }}">
 
 <!--style amp-custom-->
 {% include component/style.html %}

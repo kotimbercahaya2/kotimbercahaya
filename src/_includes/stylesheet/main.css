@@ -820,6 +820,34 @@ template {
 }
 .display-none{ display:none }
 @font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Italic'), local('Merriweather-Italic'), url(https://fonts.gstatic.com/s/merriweather/v22/u-4m0qyriQwlOrhSvowK_l5-eSZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'), url(https://fonts.gstatic.com/s/merriweather/v22/u-4l0qyriQwlOrhSvowK_l5-eR71Wsf_.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5Oew.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'), url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNpXw.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Montserrat';
   font-style: italic;
   font-weight: 400;
@@ -885,6 +913,7 @@ template {
 :root {
   --body-font: "Montserrat", sans-serif;
   --heading-font: "Poppins", sans-serif;
+  --text-font: "Merriweather", serif;
   --light-shade: #ECEDF0;
   --light-accent: #599BCF;
   --main-color: #2364CC;
@@ -975,6 +1004,7 @@ a, img {
   color: var(--main-color);
 }
 #site-body #post #post-content p, #site-body #post #post-content ul, #site-body #post #post-content ol {
+  font-family: var(--text-font);
   font-size: 1.25rem;
   line-height: 1.75rem;
   text-align: justify;
