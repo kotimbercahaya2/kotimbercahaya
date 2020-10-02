@@ -15,10 +15,13 @@
     "@ampproject/eleventy-plugin-amp": "^0.5.3",
     "autoprefixer": "^9.8.6",
     "del-cli": "^3.0.1",
+    "dotenv": "^8.2.0",
     "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.2",
+    "gulp-if": "^3.0.0",
     "gulp-postcss": "^9.0.0",
+    "gulp-purgecss": "^3.0.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-shell": "^0.8.0",
@@ -31,5 +34,7 @@
     "sass": "^1.26.11",
     "workbox-build": "^5.1.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@pwabuilder/pwainstall": "^1.6.6"
+  }
 }

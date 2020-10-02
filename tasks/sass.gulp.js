@@ -1,7 +1,10 @@
+require('dotenv').config()
 const gulp = require('gulp')
 const changed = require('gulp-changed')
 const pipeline = require('readable-stream').pipeline
 const replace = require('gulp-replace')
+const gulpif = require('gulp-if')
+const purge = require('gulp-purgecss')
 const sass = require('gulp-sass')
 sass.compiler = require('sass')
 const postcss = require('gulp-postcss')
@@ -23,6 +26,11 @@ gulp.task('compilecss', function() {
         sass(),
         postcss(processors),
         replace(' !important', ''),
+        gulpif(process.env.ELEVENTY_ENV === 'prod',
+            purge({
+                content: ['src/**/*.html']
+            })
+        ),
         gulp.dest(DEST)
     )
 })
