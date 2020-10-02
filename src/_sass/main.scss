@@ -1,11 +1,12 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css'); //normalize.css
 @import url('https://unpkg.com/basscss@8.0.2/css/basscss.css'); //BassCSS
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap'); //Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap'); //Google Fonts
 
 :root{
     //Font
     --body-font: 'Montserrat', sans-serif;
     --heading-font: 'Poppins', sans-serif;
+    --text-font: 'Merriweather', serif;
 
     //Colors
     --light-shade: #ECEDF0;
@@ -105,6 +106,7 @@ a, img {
         }
         #post-content {
             p, ul, ol {
+                font-family: var(--text-font);
                 font-size: 1.25rem;
                 line-height: 1.75rem;
                 text-align: justify;
