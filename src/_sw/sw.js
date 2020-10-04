@@ -78,4 +78,8 @@ workbox.routing.registerRoute(
     'POST'
 )
 
-workbox.googleAnalytics.initialize()
+workbox.googleAnalytics.initialize({
+    parameterOverrides: {
+        cd1: 'offline'
+    }
+})
