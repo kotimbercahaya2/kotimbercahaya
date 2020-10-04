@@ -77,3 +77,5 @@ workbox.routing.registerRoute(
     new workbox.strategies.NetworkOnly(),
     'POST'
 )
+
+workbox.googleAnalytics.initialize()
