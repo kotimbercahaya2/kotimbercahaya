@@ -3,6 +3,7 @@ const attrs = require('markdown-it-attrs')
 const ampPlugin = require('@ampproject/eleventy-plugin-amp')
 const typeset = require('eleventy-plugin-typeset')
 const htmlmin = require('html-minifier')
+const sitemap = require('@quasibit/eleventy-plugin-sitemap')
 
 module.exports = function(eleventyConfig){
 
@@ -18,6 +19,13 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addPlugin(typeset({
         disable: ['ligatures', 'hyphenate']
     }))
+
+    //sitemap
+    eleventyConfig.addPlugin(sitemap, {
+        sitemap: {
+            hostname: 'https://kotimbercahaya.net'
+        }
+    })
 
     //local filters
     eleventyConfig.addPlugin(require('./plugins'))

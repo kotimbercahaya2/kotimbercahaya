@@ -1,8 +1,8 @@
-# kotimbercahaya
+# kotimbercahaya.net
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e9a4185e-2b72-417e-8340-ff2de1611430/deploy-status)](https://app.netlify.com/sites/kotimbercahaya/deploys)
 
-Website yang dibangun sebagai media pemenangan Pasangan Calon Bupati/Wakil Bupati Kotawaringin Timur nomor 4, M. Rudini Darwan Ali/H. Samsudin, S.Pd.I. Dibangun dengan Eleventy dan NodeJS serta dihost di Netlify.
+Website yang dibangun sebagai media pemenangan Pasangan Calon Bupati/Wakil Bupati Kotawaringin Timur nomor 4, M. Rudini Darwan Ali/H. Samsudin, S.Pd.I. Dibangun dengan [Eleventy](https://www.11ty.dev/) dan [NodeJS](https://nodejs.org/en/) serta dihost di Netlify.
 
 ## Panduan Instalasi
 ```
